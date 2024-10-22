@@ -34,5 +34,23 @@ public class CollectionsExample {
 
         System.out.print("\n\n Arraylist Sorted Using Collection Class : "+al);
 
+        ArrayList<String> s = new ArrayList<String>();
+        s.add("Ujwal");
+        s.add("Dethe");
+        s.add("A");
+        s.add("B");
+
+        Collections.sort(s);
+        System.out.print("\n\n Array List(String) Sorted : "+s);
+        //Error s.add(10);
+
+        ArrayList<Integer> al2 = new ArrayList<Integer>();
+        al2.add(200);
+        al2.add(400);
+        al2.add(100);
+        //Error al2.add("Ujjwal");
+        Collections.sort(al2);
+        System.out.print("\n"+al2);
+
     }
 }
