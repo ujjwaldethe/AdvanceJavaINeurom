@@ -50,6 +50,10 @@ public class FFFS {
 
 
         Iterator itrr=cal.iterator();
+        /*
+        * In Java, the fail-safe mechanism allows for safe iteration through a collection even when the collection is modified concurrently.
+        *  This is particularly useful in multi-threaded environments  where one thread may modify the collection
+        * while another thread is iterating through it.*/
         System.out.print("\nFail Safe  (Exception Will Not Occur) : ");
         while(itrr.hasNext())
         {
