@@ -15,8 +15,7 @@ public class VectorC {
         v.add(500);
         Enumeration em = v.elements();
         //Enumeration is not used in collection classes
-        //Its is used for Vector Classes.
-        //
+        //Its is used for legacy classes(vector,stack,hashtable).
         System.out.print("\n Accesing Objects Using Enumerators: ");
         while (em.hasMoreElements())
         {
