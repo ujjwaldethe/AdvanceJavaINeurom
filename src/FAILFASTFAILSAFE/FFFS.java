@@ -58,6 +58,7 @@ public class FFFS {
         while(itrr.hasNext())
         {
             System.out.print(itrr.next()+" ");
+            cal.add(232);
         }
 
     }
