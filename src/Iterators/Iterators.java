@@ -18,11 +18,12 @@ public class Iterators {
         //Types are :
         //Simple iterator : Iterator
         Iterator llitr =  ll.listIterator();
+        System.out.print("\nUsing Iterator : ");
         while(llitr.hasNext())
         {
             System.out.print(llitr.next()+" ");
         }
-        System.out.println();
+        System.out.print("\nUsing ListIterator (need to specify size in parameters) : ");
         //ListIterator : this iterator is only present in ArrayList And LinkedList Because index based accessing is only allowed in both two classes.
         ListIterator lli = ll.listIterator(ll.size());
         //you need to specify size of linked list or arraylist  objects in his parameters.\
@@ -30,7 +31,7 @@ public class Iterators {
         {
             System.out.print(lli.previous()+" ");
         }
-
+        System.out.print("\nUsing Descending Iterator(no need to specify size in parameters) : ");
         //descendingIterator : for this iterator you dont need to pass size of list, it automatically points to the last object of the list.
         Iterator ditr = ll.descendingIterator();
         while (ditr.hasNext())
