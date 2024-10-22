@@ -64,7 +64,9 @@ public class CollectionsExample {
         //few more important inbuilt methods of collections class
 
         System.out.print("\n\nIndex : "+Collections.binarySearch(al4,25));
-
+        Collections.shuffle(al4);
+        System.out.print("\n\n Shuffled : "+al4);
+        System.out.print("\n\n count frequency : "+Collections.frequency(al4,50));
 
     }
 }
