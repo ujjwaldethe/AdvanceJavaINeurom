@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 public class ArrayDequeueExample {
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
 
         ArrayDeque ad = new ArrayDeque();
         ad.add(55);
