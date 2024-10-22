@@ -52,5 +52,19 @@ public class CollectionsExample {
         Collections.sort(al2);
         System.out.print("\n"+al2);
 
+        ArrayList al4= new ArrayList();
+        al4.add(25);
+        al4.add(50);
+        al4.add(75);
+        al4.add(100);
+        al4.add(125);
+        al4.add(150);
+        al4.add(275);
+
+        //few more important inbuilt methods of collections class
+
+        System.out.print("\n\nIndex : "+Collections.binarySearch(al4,25));
+
+
     }
 }
