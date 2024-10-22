@@ -57,7 +57,7 @@ public class AcccessingMethods {
         System.out.print("\nArray Dequeue Accesing All Elements Order : ");
         while(adit.hasNext()==true)
         {
-            Integer i = (Integer) adit.next();
+            Integer i = (Integer) adit.next();//casting to integer object.
             System.out.print(i+" ");
         }
         LinkedList ll = new LinkedList();
