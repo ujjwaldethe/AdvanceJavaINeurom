@@ -1,5 +1,6 @@
 package Maps;
 
+import java.sql.SQLOutput;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.*;
@@ -25,6 +26,11 @@ class Student{
     public String getCity() {
         return city;
     }
+    @Override
+    public String toString()
+    {
+        return name+" "+age+" "+city;
+    }
 }
 public class MapsComplex {
     public static void main(String args[])
@@ -42,7 +48,27 @@ public class MapsComplex {
         Iterator itr = c.iterator();
         while(itr.hasNext())
         {
-            System.out.print("\n"+itr.next());
+            System.out.print("\nValues : "+itr.next());
+        }
+
+        System.out.println("\n****************************************");
+
+
+        Set sKey = hm.keySet();
+        Iterator itr2 =sKey.iterator();
+
+        while(itr2.hasNext())
+        {
+            System.out.print("\nKey Of Student : "+itr2.next());
+        }
+
+        System.out.println("\n****************************************");
+
+        Set bothData = hm.entrySet();
+        Iterator itr3 = bothData.iterator();
+        while(itr3.hasNext()){
+            Map.Entry data = (Map.Entry) itr3.next();
+            System.out.println("Key : "+data.getKey()+" Value : "+data.getValue());
         }
     }
 }
