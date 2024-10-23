@@ -1,7 +1,8 @@
 package Maps;
 
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
 
 class Student{
     private String name;
@@ -37,5 +38,11 @@ public class MapsComplex {
         hm.put(2,s2);
         hm.put(3,s3);
 
+        Collection c = hm.values();
+        Iterator itr = c.iterator();
+        while(itr.hasNext())
+        {
+            System.out.print("\n"+itr.next());
+        }
     }
 }
