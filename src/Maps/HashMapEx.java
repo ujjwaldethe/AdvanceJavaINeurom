@@ -10,15 +10,22 @@ public static void main(String agrs[])
     System.out.print("\nHashMap : "+hm);
     Collection c = hm.values();
     Iterator itr = c.iterator();
+    System.out.println("\n");
+
     while(itr.hasNext())
     {
-        System.out.print("\n"+itr.next());
+        Object o =(String) itr.next();
+        System.out.print(" "+o);
+
+
     }
     Collection c1 = hm.keySet();
     Iterator itr1 = c1.iterator();
     while(itr1.hasNext())
     {
-        System.out.print(" "+itr1 .next());
+       // System.out.print(" "+itr1 .next());
+        Integer i = (Integer) itr1.next();
+        System.out.print("\n Key "+i);
     }
 
     LinkedHashMap hm1 = new LinkedHashMap();
@@ -39,7 +46,8 @@ public static void main(String agrs[])
     Iterator itr4 = s1.iterator();
     while (itr4.hasNext())
     {
-        System.out.print(" "+itr4.next());
+       Map.Entry stud =(Map.Entry) itr4.next();
+        System.out.print("\nKey : "+stud.getKey()+" Values : "+stud.getValue());
     }
 
 }
