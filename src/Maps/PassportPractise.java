@@ -1,5 +1,6 @@
 package Maps;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 class Information{
@@ -54,12 +55,27 @@ public class PassportPractise {
         hm.put(222,info2);
         hm.put(333,info3);
 
+        Scanner sc = new Scanner(System.in);
+        hm.remove(111);
+        System.out.println("Please Enter The Passport Number : ");
+        boolean flag=false;
+        Integer k = sc.nextInt();
         Set s = hm.entrySet();
         Iterator itr = s.iterator();
         while (itr.hasNext())
         {
             Map.Entry passport =(Map.Entry)itr.next();
-            System.out.println("Passport Number : "+passport.getKey()+" | Info : "+passport.getValue());
+            Integer key = (Integer) passport.getKey();
+            if(k==key)
+            {
+                System.out.println("Passport Number : "+passport.getKey()+" | Info : "+passport.getValue());
+                flag=true;
+                System.exit(0);
+            }
+        }
+        if(flag==false)
+        {
+            System.out.println("Passport Number Not Found ");
         }
     }
 }
