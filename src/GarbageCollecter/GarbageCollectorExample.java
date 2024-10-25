@@ -49,16 +49,7 @@ public class GarbageCollectorExample {
         ht1.put(2,"krishna");
         System.out.println(ht1);
 
-        //Hashtable java 1.0
-        //HashMap java 1.2
-        /*
-        * HashTable - Synchronised (MultiThreading Not Possible)
-        * HashMap - Non Synchronised (MultiTHreading Possible)
-        *
-        * HashTable - Thread Safe
-        * HashMap - Not Thread Safe
-        * Hashtable - low performanc
-        * HashMap = high Performance
-        * */
+
+
     }
 }
