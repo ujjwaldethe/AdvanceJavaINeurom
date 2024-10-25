@@ -17,7 +17,6 @@ interface krish{
     }
     private void disp3()
     {
-
         System.out.println("\nPrivateInterface Can Private Method After Java 9");
     }
     private static void disp4()
