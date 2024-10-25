@@ -1,4 +1,7 @@
 package Maps;
+
+import java.util.HashMap;
+
 class Emplye{
     private int empid;
     private String name;
@@ -42,6 +45,8 @@ class Emplye{
 public class GarbageCollector {
     public static void main(String[] args) {
         Emplye e = new Emplye();
+        HashMap hm = new HashMap();
+
         e=null;
         System.gc();
         Emplye e1 = new Emplye();
