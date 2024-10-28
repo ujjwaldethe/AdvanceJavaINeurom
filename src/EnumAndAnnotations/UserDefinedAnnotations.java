@@ -1,8 +1,9 @@
 package EnumAndAnnotations;
 @interface CricketPlayer{
-    String country();
-    int runs();
+    String country() default "India";
+    int runs() default 2000;
 }
+@CricketPlayer
 class ViratKohli{
     private  int innings;
 
@@ -26,6 +27,10 @@ class ViratKohli{
 }
 public class UserDefinedAnnotations {
     public static void main(String[] args) {
-
+        ViratKohli vk = new ViratKohli();
+        vk.setInnings(200);
+        vk.setName("Virat");
+        System.out.println(vk.getInnings());
+        System.out.println(vk.getName());
     }
 }
