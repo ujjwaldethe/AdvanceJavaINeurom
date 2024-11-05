@@ -9,11 +9,11 @@ public class FileReader2 {
         File f = new File("C:\\Users\\krish\\IdeaProjects\\AdvanceJavaINeurom\\src\\FileHandling\\abc.txt ");
         FileReader f1 = new FileReader(f);
         char ch[] = new char[(int)f.length()];
-        f1.read(ch);
+        f1.read(ch); // read and store in character array.
         for(char data : ch)
         {
             System.out.print(data);
         }
-
+        f1.close();
     }
 }
