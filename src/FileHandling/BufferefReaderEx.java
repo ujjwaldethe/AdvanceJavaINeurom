@@ -20,6 +20,6 @@ public class BufferefReaderEx {
         while ((character = br2.read()) != -1) {  // Read until end of file (-1)
             System.out.print((char)character);  // Cast to char to display the actual character
         }
-        br.close();
+        br.close( );
     }
 }

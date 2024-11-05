@@ -14,10 +14,14 @@ public class Practise2 {
         String line2 = b2.readLine();
         while(line!=null || line2!=null )
         {
-            p.println(line);
-            p.println(line2);
-            line= b1.readLine();
-            line2=b2.readLine();
+            if(line!=null){
+                p.println(line);
+                line= b1.readLine();
+            }
+            if(line2!=null){
+                p.println(line2);
+                line2=b2.readLine();
+            }
         }
         p.flush();
         b1.close();
