@@ -5,7 +5,7 @@ import java.io.*;
 class Dog1 implements Serializable {
     transient int i = 10 ;
     transient int j = 20;
-    static transient int k= 10;
+    static  int k= 10;
     final transient int l = 20;
 }
 public class SerializationEx2 {
