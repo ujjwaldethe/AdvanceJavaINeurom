@@ -2,9 +2,24 @@ package SerializationAndDeSerialization;
 
 import java.io.*;
 
-class Account implements Serializable {
+class Account implements Serializable {//Custom Serialization
         String username = "ujjwal";
         transient String password = "123456";
+
+        //Write Logic For Serialization
+        private void writeObject(ObjectOutputStream oos) throws IOException{
+            oos.defaultWriteObject();
+            String ecps= "123"+password;
+            oos.writeObject(ecps);
+        }
+        //Write Logic For De-Serialization
+        private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+            ois.defaultReadObject();
+            String strpas = (String)ois.readObject();
+            password = strpas.substring(3);
+
+        }
+
 }
 
 
