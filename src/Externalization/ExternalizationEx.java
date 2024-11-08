@@ -29,7 +29,7 @@ class Demo implements Externalizable {
 }
 public class ExternalizationEx {
     public static void main(String[] args) throws Exception {
-        Demo a =new Demo("ujjwak",1,3);
+        Demo a =new Demo("ujjwal",1,3);
         System.out.println("Externalization Started");
         FileOutputStream fos = new FileOutputStream("C:\\Users\\krish\\IdeaProjects\\AdvanceJavaINeurom\\src\\Externalization\\abc6.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
