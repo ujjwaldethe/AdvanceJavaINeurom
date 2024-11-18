@@ -1,5 +1,4 @@
 package WeakHashMapExample;
-
 import java.util.WeakHashMap;
 
 class Emplye{
