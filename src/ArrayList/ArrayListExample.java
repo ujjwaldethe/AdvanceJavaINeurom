@@ -46,6 +46,7 @@ public class ArrayListExample {
         System.out.println("After Adding in rear end : "+al4);
 
 
+        System.out.println(al4.contains(34353));
 
 
 
