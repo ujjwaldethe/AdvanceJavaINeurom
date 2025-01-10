@@ -14,7 +14,7 @@ public class ArrayDequeueExample {
         ad.add(52);
         ad.addLast(30);
         ad.addLast(565);
-        //ad.add(1,3); indexed based insertion is not allowed.-
+        //ad.add(1,3); indexed based insertion is not allowed.-K
         System.out.println(ad);
         for(Object obj : ad)
         {
