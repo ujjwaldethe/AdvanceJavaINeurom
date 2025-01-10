@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArrayListExample {
     public static void main(String args[]) {
-        ArrayList al1 = new ArrayList();
+        ArrayList al1 = new ArrayList();//Uses Dynamic Array Data Structure
         al1.add(10);
         al1.add(20);
         al1.add(30);
@@ -17,7 +17,40 @@ public class ArrayListExample {
         al2.add("Hello");
         al2.add('b');
         al2.add(18.5);
+        //Heterogeneous Type Of Data is Allowed
+
         System.out.println(al2);
+        ArrayList al3 = new ArrayList();
+        al3.addAll(al2);
+        // We can add entire collection into another collection.
+
+        System.out.println(al3 );
+
+
+        ArrayList al4 = new ArrayList();
+        al4.add(11);
+        al4.add(22);
+        al4.add(33);
+        al4.add(44);
+
+        System.out.println("Existing Data "+ al4);
+
+        al4.add(2,28);
+        System.out.println("After Adding in 2nd index : "+al4);
+
+
+        al4.add(0,343);
+        System.out.println("After Addding in 0th index : "+al4);
+
+        al4.add(55);
+        System.out.println("After Adding in rear end : "+al4);
+
+
+
+
+
+
+
 //        ArrayList al1 = new ArrayList();
 //        al1.add(10);
 //        al1.add(20);
