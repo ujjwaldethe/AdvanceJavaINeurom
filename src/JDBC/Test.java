@@ -24,5 +24,18 @@ public class Test {
         catch ( SQLException e){
             e.printStackTrace();
         }
+        finally {
+            if (conn!=null)
+            {
+                try {
+                    conn.close();
+                    System.out.println("Connection Closed");
+                }
+                catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
