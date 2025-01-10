@@ -48,10 +48,19 @@ public class ArrayListExample {
 
         System.out.println(al4.contains(34353));
 
+        System.out.println("index : "+al4.indexOf(33));
 
 
+        System.out.println(al4);
 
+        System.out.println("Is Empty : "+al4.isEmpty());
 
+        System.out.println(al4.size());
+
+        System.out.println(al4.getClass());
+
+        al4.clear();
+        System.out.println(al4);
 //        ArrayList al1 = new ArrayList();
 //        al1.add(10);
 //        al1.add(20);

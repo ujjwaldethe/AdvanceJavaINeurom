@@ -3,7 +3,18 @@ import java.util.*;
 public class LinkedListExample {
     public static void main(String args[])
     {
-        
+        LinkedList ll2 = new LinkedList();
+        ll2.add(10);
+        ll2.add(2);
+        ll2.add(20);
+        ll2.add(30);
+        System.out.println(ll2);
+        System.out.println(ll2.getFirst());
+        System.out.println(ll2.getLast());
+
+        System.out.println(ll2.indexOf(30));
+        System.out.println(ll2.lastIndexOf(300));
+        System.out.println("***************************");
         LinkedList ll1 = new LinkedList();
         ll1.add(10);
         ll1.add("Ineuron");
