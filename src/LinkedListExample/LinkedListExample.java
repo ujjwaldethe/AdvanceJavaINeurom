@@ -44,10 +44,10 @@ public class LinkedListExample {
         System.out.println(ll1.lastIndexOf(20));
         System.out.println(ll1.indexOf(20));
         ll1.offerFirst(23);//might add or not
-        ll1.offerLast(34);
+        ll1.offerLast(34);//might add or not
         System.out.println(ll1);
         ll1.addFirst(5);//compulsorily add
-        ll1.addLast(10);
+        ll1.addLast(10);//compulsorily add
         System.out.println(ll1);
         System.out.println(ll1.peekFirst());//does not affect linkedlist,it will fetch only.If the list is empty, it returns null instead of throwing an exception
         System.out.println(ll1);
