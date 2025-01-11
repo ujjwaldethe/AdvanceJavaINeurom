@@ -1,11 +1,20 @@
 package TreeSet;
 
+import java.util.*;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class TreeSetDS {
     public static void main(String args[])
     {
         TreeSet ts = new TreeSet();
+        Set s= new HashSet();
+        s.add(10);
+        s.add(20);
+        s.add(30);
+        System.out.println(s);
+        s.add(10);
+        System.out.println(s);
         ts.add(20);
         ts.add(50);
         ts.add(23);
