@@ -6,9 +6,9 @@ public class AcccessingMethods {
     public static void main(String args[])
     {
         ArrayList al = new ArrayList();
-        al.add(10);
-        al.add(20);
-        al.add(30);
+        al.add(10); //Autoboxing al.add (New Integer(10))
+        al.add(2.0);//Autoboxing al.add(New Double(2.0))
+        al.add('H');//Autoboxing al.add(New Character('c'));
         al.add(40);
         al.add(50);
         al.add(60);
@@ -29,7 +29,7 @@ public class AcccessingMethods {
         System.out.print("\nUsing Iterator : ");
         Iterator itr = al.iterator();//Activate now and will be used in indexed based and not indexed bases ds.
 
-        if(itr.hasNext()==true);
+        if(itr.hasNext());
         {
             System.out.print(itr.next());//will fetch the value.
         }
@@ -37,12 +37,12 @@ public class AcccessingMethods {
         //Accessing Whole Elements
         while(itr.hasNext())
         {
-            Integer i = (Integer   ) itr.next();
-            System.out.print(i+" ");
+            //Integer i = (Integer   ) itr.next();
+            System.out.print(itr.next()+" ");
         }
         System.out.print("\nAccesing All Elements In Reverse Order : ");
-        ListIterator litr = al.listIterator();
-        while (litr.hasPrevious())
+        ListIterator litr = al.listIterator(al.size());
+        while(litr.hasPrevious())
         {
             System.out.print(litr.previous()+" ");
         }
@@ -55,7 +55,7 @@ public class AcccessingMethods {
         al2.add(60);
         Iterator adit = al2.iterator();
         System.out.print("\nArray Dequeue Accesing All Elements Order : ");
-        while(adit.hasNext()==true)
+        while(adit.hasNext())
         {
             Integer i = (Integer) adit.next();//casting to integer object.
             System.out.print(i+" ");
