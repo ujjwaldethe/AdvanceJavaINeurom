@@ -59,7 +59,6 @@ public class AcccessingMethods {
         {
             Integer i = (Integer) adit.next();//casting to integer object.
             System.out.print(i+" ");
-
         }
         LinkedList ll = new LinkedList();
         ll.add(10);
