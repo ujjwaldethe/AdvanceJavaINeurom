@@ -1,4 +1,4 @@
-package HashSetDS;
+package CollectionFramework.HashSetDS;
 import java.util.*;
 public class HashSet2 {
     public  static void main(String args[])

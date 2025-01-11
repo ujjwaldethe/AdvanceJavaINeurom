@@ -17,7 +17,7 @@ public class CollectionsExample {
         ts.add(125);
         ts.add(275);
 
-        System.out.print("\n\nTreeSet(Automatically Sorts) : "+ts);
+        System.out.print("\n\nCollectionFramework.TreeSet(Automatically Sorts) : "+ts);
 
         ArrayList al = new ArrayList();
         al.add(100);
@@ -28,7 +28,7 @@ public class CollectionsExample {
         al.add(125);
         al.add(275);
 
-        System.out.print("\n\nArrayList : "+al);
+        System.out.print("\n\n3 : "+al);
 
         Collections.sort(al);
 

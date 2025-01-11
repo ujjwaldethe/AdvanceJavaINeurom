@@ -24,7 +24,7 @@ public class Iterators {
             System.out.print(llitr.next()+" ");
         }
         System.out.print("\nUsing ListIterator (need to specify size in parameters) : ");
-        //ListIterator : this iterator is only present in ArrayList And LinkedList Because index based accessing is only allowed in both two classes.
+        //ListIterator : this iterator is only present in 3 And LinkedList Because index based accessing is only allowed in both two classes.
         ListIterator lli = ll.listIterator(ll.size());
         //you need to specify size of linked list or arraylist  objects in his parameters.\
         while (lli.hasPrevious())

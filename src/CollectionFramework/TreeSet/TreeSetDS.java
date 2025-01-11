@@ -1,4 +1,4 @@
-package TreeSet;
+package CollectionFramework.TreeSet;
 
 import java.util.*;
 import java.util.Set;
@@ -35,19 +35,19 @@ public class TreeSetDS {
         ceiling(E e):
         Returns the least element in the set greater than or equal to the given element e.
         If no such element exists, it returns null.
-        Example: If the TreeSet contains {10, 20, 30} and you call ceiling(15), it returns 20.
+        Example: If the CollectionFramework.TreeSet contains {10, 20, 30} and you call ceiling(15), it returns 20.
         floor(E e):
         Returns the greatest element in the set less than or equal to the given element e.
         If no such element exists, it returns null.
-        Example: If the TreeSet contains {10, 20, 30} and you call floor(25), it returns 20.
+        Example: If the CollectionFramework.TreeSet contains {10, 20, 30} and you call floor(25), it returns 20.
         higher(E e):
         Returns the least element in the set strictly greater than the given element e.
         If no such element exists, it returns null.
-        Example: If the TreeSet contains {10, 20, 30} and you call higher(20), it returns 30.
+        Example: If the CollectionFramework.TreeSet contains {10, 20, 30} and you call higher(20), it returns 30.
         lower(E e):
         Returns the greatest element in the set strictly less than the given element e.
         If no such element exists, it returns null.
-        Example: If the TreeSet contains {10, 20, 30} and you call lower(20), it returns 10.
+        Example: If the CollectionFramework.TreeSet contains {10, 20, 30} and you call lower(20), it returns 10.
         * */
 
     }

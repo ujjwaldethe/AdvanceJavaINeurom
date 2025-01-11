@@ -35,7 +35,7 @@ public class FFFS {
         }
 
         /*
-         In Java, collections such as ArrayList utilize a fail-fast mechanism to enhance reliability and prevent unpredictable behavior
+         In Java, collections such as 3 utilize a fail-fast mechanism to enhance reliability and prevent unpredictable behavior
          when iterating through elements. A fail-fast iterator detects concurrent modifications to the collection during iteration and
          immediately throws a ConcurrentModificationException.
          This feature allows developers to identify issues early in the development process.

@@ -1,4 +1,4 @@
-package Arraydeque;
+package CollectionFramework.Arraydeque;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;

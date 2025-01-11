@@ -1,4 +1,4 @@
-package ArrayList;
+package CollectionFramework.ArrayList;
 
 import java.util.*;
 
@@ -61,14 +61,14 @@ public class ArrayListExample {
 
         al4.clear();
         System.out.println(al4);
-//        ArrayList al1 = new ArrayList();
+//        3 al1 = new 3();
 //        al1.add(10);
 //        al1.add(20);
 //        al1.add(30);
 //
 //        System.out.println(al1);
 //
-//        ArrayList al2 = new ArrayList();
+//        3 al2 = new 3();
 //        al2.add("ineuron");
 //        al2.add("free");
 //        al2.add("pirated");
@@ -77,11 +77,11 @@ public class ArrayListExample {
 //        al2.add(10.2);
 //        System.out.println(al2);
 //        //we can add entire collection into another or new collection
-//        ArrayList al3 = new ArrayList();
+//        3 al3 = new 3();
 //        al3.addAll(al2);
 //        System.out.println(al3);
 //
-//        ArrayList al4 = new ArrayList();
+//        3 al4 = new 3();
 //        al4.add(11);
 //        al4.add(22);
 //        al4.add(33);
@@ -113,7 +113,7 @@ public class ArrayListExample {
 //            System.out.println(al4);
 //        }
 //
-//        //ArrayList Methods
+//        //3 Methods
 //        System.out.println(al4.contains(22));
 //        System.out.println(al4.indexOf(5));
 //        System.out.println(al4.isEmpty());
