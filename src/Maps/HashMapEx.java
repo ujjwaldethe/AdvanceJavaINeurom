@@ -50,7 +50,7 @@ public static void main(String agrs[])
     Iterator itr4 = s1.iterator();
     while (itr4.hasNext())
     {
-       Map.Entry stud =(Map.Entry) itr4.next();
+       Map.Entry stud =(Map.Entry) itr4.next();//Entry is inner interface of Map.
         System.out.print("\nKey : "+stud.getKey()+" Values : "+stud.getValue());
     }
 
