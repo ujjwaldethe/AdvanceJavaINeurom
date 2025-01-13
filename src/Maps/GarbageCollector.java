@@ -34,11 +34,7 @@ class Emplye{
     {
         return "hyder";
     }
-    @Override
-    public void finalize()
-    {
-        System.out.println("Garbage Collector Called");
-    }
+
 
 
 }
