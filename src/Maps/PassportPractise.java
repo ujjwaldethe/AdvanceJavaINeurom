@@ -56,7 +56,7 @@ public class PassportPractise {
         hm.put(333,info3);
 
         Scanner sc = new Scanner(System.in);
-        hm.remove(111);
+
         System.out.println("Please Enter The Passport Number : ");
         boolean flag=false;
         Integer k = sc.nextInt();
