@@ -1,4 +1,7 @@
 package EnumAndAnnotations;
+
+import java.lang.annotation.Annotation;
+
 @interface CricketPlayer{
     String country() default "India";
     int runs() default 2000;
@@ -31,6 +34,11 @@ public class UserDefinedAnnotations {
         vk.setInnings(200);
         vk.setName("Virat");
         System.out.println(vk.getInnings());
+        Class c = vk.getClass();
+        Annotation an = c.getAnnotation(CricketPlayer.class);//get data from inside the annotation using reflection API
+        CricketPlayer cp = (CricketPlayer) an;
+        System.out.println(cp.country());
+        System.out.println(cp.runs());
         System.out.println(vk.getName());
     }
 }

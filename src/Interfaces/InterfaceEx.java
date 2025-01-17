@@ -42,7 +42,7 @@ class Student implements krish{
 //    }
 
 }
-public class InterfaceEx {
+public class   InterfaceEx {
     public static void main(String[] args) {
      Student s = new Student();
      s.teaches();
