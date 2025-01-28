@@ -7,7 +7,7 @@ class  MyComparator1 implements Comparator  {
 
         String i11 =obj1.toString();
         String i12 =obj2.toString();
-        return i11.compareTo(i12);
+        return i12.compareTo(i11);
     }
 }
 public class SortUsingStringAndStringBuffer {
