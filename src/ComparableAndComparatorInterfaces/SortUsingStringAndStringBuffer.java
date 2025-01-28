@@ -7,13 +7,13 @@ class  MyComparator1 implements Comparator  {
 
         String i11 =obj1.toString();
         String i12 =obj2.toString();
-        if(i11.length()>i12.length())
-        {
-            return 1;
-        }
-        else if(i11.length()<i12.length())
+        if(i11.length()<i12.length())
         {
             return -1;
+        }
+        else if(i11.length()>i12.length())
+        {
+            return 1;
         }
         else {
             return i11.compareTo(i12);
