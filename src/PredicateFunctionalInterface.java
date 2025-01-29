@@ -19,6 +19,7 @@ class PredicateFunctinalInterface
         m1(p1.or(p2),arr);
         System.out.print("\n Not Even  : ");
         m1(p2.negate(),arr);
+
     }
     public static void m1(Predicate<Integer> p , int[] x)
     {
