@@ -4,16 +4,16 @@ import java.io.FileInputStream;
 import java.sql.*;
 import java.util.Properties;
 
-public class JDBCStandardApp {
+public class JDBCStandardApp2 {
     public static Connection getJDBCConnection() throws Exception {
-        FileInputStream f = new FileInputStream("C:\\Users\\krish\\IdeaProjects\\AdvanceJavaINeurom\\src\\JDBC\\application.properties");
+        FileInputStream f = new FileInputStream("C:\\Users\\krish\\IdeaProjects\\AdvanceJavaINeurom\\src\\JDBC\\appplication2.properties");
         Properties properties = new Properties();
         properties.load(f);
         String url = properties.getProperty("url");
         String user = properties.getProperty("user");
         String password = properties.getProperty("password");
         Connection conn =  DriverManager.getConnection(url,user,password);
-        System.out.println("Connection Established Successfully");
+        System.out.println("Connection Established Success");
         return conn;
     }
     public static void cleanUp(Connection conn, Statement stmt , ResultSet rs) throws SQLException {
