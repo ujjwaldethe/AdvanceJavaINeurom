@@ -13,19 +13,28 @@ public class DataOperatationApp {
     public static void main(String[] args) throws Exception {
         Connection conn = null;
         PreparedStatement pstmt = null;
+        PreparedStatement pstmt1 = null;
+        PreparedStatement pstmt2 = null;
         ResultSet rs = null;
         Scanner sc = null;
         String name =null ;
         String dob = null;
         String dom = null;
+        String country = null;
+        int id = 0;
         java.sql.Date sqlDob = null;
         java.sql.Date sqlDom = null;
 
         conn = JDBCStandardApp2.getJDBCConnection();
+        String sqlInsertQuery="insert into dataop (name,dob,dom,country)values(?,?,?,?)";
+        String sqlInsertQuery1="delete from dataop where id=1";
+        String sqlInsertQuery2="select * from dataop";
         if(conn!=null)
         {
-            String sqlInsertQuery="insert into dataop (name,dob,dom)values(?,?,?)";
+
             pstmt = conn.prepareStatement(sqlInsertQuery);
+            pstmt1 = conn.prepareStatement(sqlInsertQuery1);
+            pstmt2 = conn.prepareStatement(sqlInsertQuery2);
         }
         if(pstmt!=null)
         {
@@ -34,13 +43,17 @@ public class DataOperatationApp {
             {
                 System.out.println("Enter Username : ");
                 name = sc.next();
-                System.out.println("Enter DOB (mm-dd-yyyy):");
+                System.out.println("Enter DOB (MM-dd-yyyy):");
                 dob = sc.next();
-                System.out.println("Enter DOM (yyyy-mm-dd) : ");
+                System.out.println("Enter DOM (yyyy-MM-dd) : ");
                 dom = sc.next();
+               // System.out.println("Enter id to delete : ");
+               // id = sc.nextInt();
+                System.out.println("Enter Country : ");
+                country = sc.next();
             }
             if(dob!=null) {
-                //Conversion Of String To SqlDate
+//                Conversion Of String To SqlDate
                 SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
                 java.util.Date udate = sdf.parse(dob);
                 long value = udate.getTime();
@@ -55,9 +68,15 @@ public class DataOperatationApp {
             pstmt.setString(1,name);
             pstmt.setDate(2,sqlDob);
             pstmt.setDate(3,sqlDom);
+            pstmt.setString(4,country);
+           // pstmt1.setInt(1,id);
             int rowAffected = pstmt.executeUpdate();
+            //int rowAffected1 = pstmt1.executeUpdate();
             System.out.println("Row Affected : "+rowAffected);
-            rs =pstmt.executeQuery("select * from dataop");
+            //System.out.println("Row Affected : "+rowAffected1   );
+
+
+            rs =pstmt2.executeQuery();
         }
 
         if(rs!=null)
