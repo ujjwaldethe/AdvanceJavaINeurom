@@ -16,7 +16,7 @@ public class JDBCStandardApp2 {
         System.out.println("Connection Established Success");
         return conn;
     }
-    public static void cleanUp(Connection conn, Statement stmt , ResultSet rs) throws SQLException {
+    public static void cleanUp(Connection conn, PreparedStatement stmt , ResultSet rs) throws SQLException {
         if(conn!=null)
             conn.close();
         if(stmt!=null)

@@ -14,7 +14,5 @@ public class PropertiesApp {
         System.out.println(url);
         System.out.println(user);
         System.out.println(password);
-
-
     }
 }
