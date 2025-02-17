@@ -1,11 +1,16 @@
 package JDBC_CURD_APP_Service;
-
+import  IStudentService.StudentServiceFactory;
+import JDBC_CURD_APP_Persistance.IstudentDao;
 import JDBC_CURD_APP_dto.Student;
+import daofactory.StudentDaoFactory;
 
+//Service Layer Logic
 public class StudentServiceImpl implements IStudentService{
+    IstudentDao stdService=null;
     @Override
     public String addStudent(String sname, Integer sage, String address) {
-        return "";
+        stdService = StudentDaoFactory.getStudentDao();
+        return stdService.addStudent(sname,sage,address);
     }
 
     @Override

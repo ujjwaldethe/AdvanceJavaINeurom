@@ -2,10 +2,11 @@ package JDBC_CURD_APP_Persistance;
 
 import JDBC_CURD_APP_dto.Student;
 
+//Persistance Logic USing JDBC API
 public class StudentDaompl implements IstudentDao{
     @Override
     public String addStudent(String sname, Integer sage, String address) {
-        return "";
+        return "Success";
     }
 
     @Override
