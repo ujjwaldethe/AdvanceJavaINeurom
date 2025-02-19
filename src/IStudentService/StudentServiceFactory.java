@@ -8,6 +8,7 @@ public class StudentServiceFactory {
     private static IStudentService studentService =null;
     private StudentServiceFactory()
     {
+
     }
     public static IStudentService getStudentService()
     {

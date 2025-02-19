@@ -10,7 +10,10 @@ public class StudentServiceImpl implements IStudentService{
     @Override
     public String addStudent(String sname, Integer sage, String address) {
         stdService = StudentDaoFactory.getStudentDao();
-        return stdService.addStudent(sname,sage,address);
+        if(stdService!=null)
+            return stdService.addStudent(sname,sage,address);
+        else
+            return "Failed";
     }
 
     @Override
