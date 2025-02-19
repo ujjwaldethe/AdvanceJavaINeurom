@@ -15,6 +15,5 @@ public class TestApp {
         else {
             System.out.println("Record Insertion UnSuccessful");
         }
-
     }
 }
