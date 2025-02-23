@@ -1,4 +1,4 @@
-import JDBC.JDBCStandardApp2;
+package JDBC;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
