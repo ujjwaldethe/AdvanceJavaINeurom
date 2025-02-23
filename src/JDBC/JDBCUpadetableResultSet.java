@@ -57,6 +57,45 @@ import java.util.Scanner;
                     rs.refreshRow(); // Refreshing the row to reflect database updates
                     System.out.println("\t" + rs.getInt(1) + "\t" + rs.getString(2) + "\t" + rs.getInt(3) + "\t" + rs.getString(4));
                 }
+
+
+                rs.moveToInsertRow();
+
+                rs.updateString(2,"Ujjwal");
+                rs.updateInt(3,21);
+                rs.updateString(4,"RCD");
+                rs.insertRow();
+                System.out.println("Records After Insertion");
+
+                // Moving the cursor back to the first row
+                rs.beforeFirst();
+
+                // Iterating again to fetch updated records
+                while (rs.next()) {
+                    rs.refreshRow(); // Refreshing the row to reflect database updates
+                    System.out.println("\t" + rs.getInt(1) + "\t" + rs.getString(2) + "\t" + rs.getInt(3) + "\t" + rs.getString(4));
+                }
+                System.out.println("After Updating");
+                rs.beforeFirst();
+                while (rs.next())
+                {
+                    int age = rs.getInt(3);
+                    if(age>35)
+                    {
+                        int incrAge = age+5;
+                        rs.updateInt(3,incrAge);
+                        rs.updateRow();
+                    }
+                }
+                // Moving the cursor back to the first row
+                rs.beforeFirst();
+
+                // Iterating again to fetch updated records
+                while (rs.next()) {
+                    rs.refreshRow(); // Refreshing the row to reflect database updates
+                    System.out.println("\t" + rs.getInt(1) + "\t" + rs.getString(2) + "\t" + rs.getInt(3) + "\t" + rs.getString(4));
+                }
+
             }
         } catch (Exception e) {
             e.printStackTrace(); // Handling any exceptions by printing stack trace
