@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.1.0/mysql-connector-j-9.1.0/mysql-connector-j-9.1.0.jar!/" />
       <root url="jar://$USER_HOME$/Documents/Jars/commons-io-2.8.0.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/Excel_JDBC43.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/HikariCP-3.4.5.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/slf4j-simple-2.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/slf4j-api-2.0.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

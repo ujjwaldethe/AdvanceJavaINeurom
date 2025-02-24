@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public class PropertiesApp {
     public static void main(String[] args) throws Exception {
-        FileInputStream f = new FileInputStream("C:\\Users\\krish\\IdeaProjects\\AdvanceJavaINeurom\\src\\JDBC\\application.properties");
+        FileInputStream f = new FileInputStream("C:\\Users\\krish\\IdeaProjects\\AdvanceJavaINeurom\\src\\JDBC\\db.properties");
         Properties properties = new Properties();
         properties.load(f);
         String url = properties.getProperty("url");
