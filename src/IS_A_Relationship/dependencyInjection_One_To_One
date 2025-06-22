@@ -1,0 +1,107 @@
+  The Process Of Injecting Dependent Object Into Target Object Is Called As "Dependency Injection".
+
+  eg 1 :
+  class Engine
+  {
+    //Dependent Object
+  }
+  class Car
+  {
+    //Target Object
+  Engine engine;
+
+  }
+  We can achieve dependency injection in 2 ways
+    a.Constructor Dependency Injection
+    b.Setter Dependency Injection
+
+  a.Constructor Dependency Injection : Injecting dependent object into target object through a constructor is called as "Constructor Dependency Injection"
+  b.Setter Dependency Injection : Injecting dependent object into target object through a setter is called as "Setter Dependency Injection".
+
+Relationships In Java
+=======================
+As a part of java application development, we have to use entities as per the application requirements.
+In java application development, if we want to provide optimizations over memory utilization, code reusability, execution time
+,sharebility then we have to define relationships between entities.
+
+There are three types of relationships between entities:
+1. Has A Relationship (Extensively Used In Projects)
+2. Is A Relationship
+3. Use A Relationship
+
+Q)What is the difference between HAS-A Relationship And IS-A Relationship
+Ans :
+Has-A relationship will define associations between entities in java applications, here associations between entities will
+improve communications between entities and data navigation between entities.
+
+IS-A Relationship is able to define inheritance between entity classes, it will improve "Code Reusability" In Java Applications
+ =================
+ Associations In Java
+
+ There are four types of associations between entities:
+ 1.One To One Association (1:1)
+ 2.One TO Many Association (1:M)
+ 3.Many To One Association (M:1)
+ 4.Many To Many Association (M:M)
+Eg : To Achieve associations between entities, we have to declare either single reference or array of reference variables
+of an entity class in another entity class.
+class Address
+{
+
+}
+class Account
+{
+
+}
+class Employee
+{
+    Address[] addr; //It Will Establish One-To-Many Association (1:M)
+    Account account ; //One-To-One Associations
+}
+Code Reusability:
+======================
+class Object
+{
+    public boolean equals(Object obj)
+    {
+    }
+    public String toString()
+    {
+    }
+}
+class Student
+{
+}
+System.out.println(new Student());
+V
+Here's a complete and neatly written explanation of all four types of associations in simple grammar, with examples:
+
+---
+
+### **1. One-to-One Association**
+
+It is a relationship between two entities where **one instance of an entity is related to exactly one instance of another entity**.
+**Example:** One employee has exactly one account.
+
+---
+
+### **2. One-to-Many Association**
+
+It is a relationship where **one instance of an entity is related to multiple instances of another entity**.
+**Example:** One department can have many employees.
+
+---
+
+### **3. Many-to-One Association**
+
+It is a relationship where **many instances of an entity are related to one instance of another entity**.
+**Example:** Many employees work in one department.
+
+---
+
+### **4. Many-to-Many Association**
+
+It is a relationship where **many instances of an entity are related to many instances of another entity**.
+**Example:** Many students can enroll in many courses, and each course can have many students.
+
+--
