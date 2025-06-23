@@ -1,0 +1,64 @@
+### 🔹 What is an **Inner Class** in Java?
+
+An **inner class** is a class that is defined **inside another class**. It can access the members (including private) of the outer class.
+
+```java
+class Outer {
+    private int data = 10;
+
+    class Inner {
+        void show() {
+            System.out.println("Data: " + data); // can access private members
+        }
+    }
+}
+```
+
+---
+
+### 🔹 Types of Inner Classes:
+
+1. **Member Inner Class** – Defined inside a class, but outside any method.
+2. **Static Nested Class** – Like a static member of the outer class.
+3. **Local Inner Class** – Defined inside a method.
+4. **Anonymous Inner Class** – Defined and instantiated in one expression.
+
+---
+
+### 🔹 Why is it used? (Purpose)
+
+1. ✅ **Logical Grouping**: If a class is useful only to its outer class, group it inside.
+2. 🔒 **Encapsulation**: Inner classes can access private members of the outer class, supporting better data hiding.
+3. 👨‍👩‍👦 **Code Readability & Structure**: Keeps related code in one place.
+4. 🔄 **Callbacks and Event Handling**: Often used in GUI (like `ActionListener` in Swing).
+5. 🧩 **Avoid Code Duplication**: Anonymous inner classes help in quick implementation of interfaces without creating separate named classes.
+
+---
+
+### 🔹 Example Use Case:
+
+```java
+class Button {
+    interface OnClickListener {
+        void onClick();
+    }
+
+    void setOnClickListener(OnClickListener listener) {
+        listener.onClick();
+    }
+}
+
+class MyApp {
+    public static void main(String[] args) {
+        Button button = new Button();
+
+        button.setOnClickListener(new Button.OnClickListener() {
+            public void onClick() {
+                System.out.println("Button Clicked!");
+            }
+        });
+    }
+}
+
+This uses an **anonymous inner class** to handle a button click.
+
