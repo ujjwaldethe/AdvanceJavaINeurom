@@ -2,8 +2,7 @@ package Interfaces.Ex4;
 
 
 
-interface Idemo1
-{
+interface Idemo1 {
     void m1();
 }
 interface Idemo2
