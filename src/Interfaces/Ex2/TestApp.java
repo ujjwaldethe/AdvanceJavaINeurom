@@ -4,12 +4,12 @@ interface ISample
 {
     //By default "public and abstract"
     void m1();
-    void m2();
+      void m2();
 }
 abstract class SampleImpl implements ISample
 {
     @Override
-    public void m1()
+    public  void m1()
     {
         System.out.println("Implementation");
     }
