@@ -20,5 +20,21 @@ public class TestApp {
         System.out.println(c);
         System.out.println(c1);
 
+        Boolean b1 = Boolean.valueOf("ujjwal");
+        System.out.println(b1);
+        Boolean b2 = Boolean.valueOf("true");
+        System.out.println(b2);
+        Boolean b3 = Boolean.valueOf("TrUe ");
+        System.out.println(b3);
+        Boolean b4 = Boolean.valueOf("false");
+        System.out.println(b4);
+        Boolean b5 = Boolean.valueOf("False");
+        System.out.println(b5);
+        Boolean b6 = Boolean.valueOf("TRUE");
+        System.out.println(b6);
+        Boolean b7 = Boolean.valueOf("FALSE");
+        System.out.println(b7);
+
+
     }
 }
