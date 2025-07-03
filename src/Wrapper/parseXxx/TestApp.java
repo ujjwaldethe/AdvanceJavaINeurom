@@ -7,7 +7,6 @@ public class TestApp {
         boolean b1 = Boolean.parseBoolean("Ujjwal");
         System.out.println(i);
         System.out.println(b1);
-
         //commandline arguments => String inputs = args[0],args[1]
         try
         {
