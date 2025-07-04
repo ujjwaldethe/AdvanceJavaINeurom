@@ -1,10 +1,10 @@
 package Polymorphism.ConpileTimePolymorphism;
 class Test
 {
-    public void add(int... a)
+    public void add(float w,float... a)// JVM internally uses Array Representation to hold the values of x
     {
-        int sum = 0;
-        for(int num : a)
+        float sum = 0;
+        for(float num : a)
             sum += num;
         System.out.println(sum);
     }
@@ -14,6 +14,7 @@ public class Ex1 {
         Test t = new Test();
         t.add(10,10,10);
         t.add(10,10);
-        t.add(10);
+        t.add(10,10);
+        t.add(3.4f);//0
     }
 }
