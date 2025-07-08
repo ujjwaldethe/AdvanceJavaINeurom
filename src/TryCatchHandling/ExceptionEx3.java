@@ -7,6 +7,6 @@ import java.io.File;
 //Checked Exception -> It will be checked by compiler.
 public class ExceptionEx3 {
     public static void main(String[] args) throws InterruptedException {
-    Thread.sleep(4000);
-    }
+        Thread.sleep(4000);
+    }   
 }

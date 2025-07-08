@@ -8,12 +8,19 @@ class Alpha
     {
         System.out.println("Connection To Calc App Is Established");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter The First Num To Divide");
-        int num1 = sc.nextInt();
-        System.out.println("Enter The Second Num To Divide");
-        int num2 = sc.nextInt();
-        int res = num1 / num2;
-        System.out.println("The Res Is " + res);
+        try{
+
+            System.out.println("Enter The First Num To Divide");
+            int num1 = sc.nextInt();
+            System.out.println("Enter The Second Num To Divide");
+            int num2 = sc.nextInt();
+            int res = num1 / num2;
+            System.out.println("The Res Is " + res);
+        }
+        catch (ArithmeticException e)
+        {
+            throw e;
+        }
     }
 }
 class Beta
@@ -22,18 +29,23 @@ class Beta
     {
         Alpha a = new Alpha();
         a.alpha();
+        System.out.println("Beta Class");
     }
 }
 
 public class ExceptionEx2 {
     public static void main(String[] args) {
-        try
-        {
-            new Beta().beta();
+        try {
+
         }
         catch (ArithmeticException e)
         {
-            System.out.println("Cannot Divide By Zer0");
+            System.out.println(e.toString());
         }
+        finally {
+            System.out.println("1");
+        }
+
     }
+
 }
