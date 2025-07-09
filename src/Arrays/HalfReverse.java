@@ -7,12 +7,11 @@ public class HalfReverse {
     {
        int i = (arr.length)/2;
        int j = arr.length-1;
-       int temp;
        while(i<j)
        {
-           temp=arr[i];
-           arr[i]=arr[j];
-           arr[j]=temp;
+           arr[i]=arr[i]+arr[j];
+           arr[j]=arr[i]-arr[j];
+           arr[i]=arr[i]-arr[j];
            i++;
            j--;
        }
