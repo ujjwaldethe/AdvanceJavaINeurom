@@ -29,6 +29,6 @@ public class ZigZagArray {
                     n2++;
                 }
                 extra++;}
-        }return ans;
+        }return ans; 
     }
 }
